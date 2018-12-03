@@ -1,12 +1,12 @@
 .property > ul#sharing-buttons {
-    width: 75%;
+    width: 68%;
     margin: 0;
 }
 
 ul#sharing-buttons {
     list-style: none;
     line-height: 20px;
-    height: 20px;
+    height: auto;
     padding-left: 0px;
     clear: both;
 }
