@@ -4,6 +4,15 @@ $pageTitle = $this->headTitle()->renderTitle() . ' · ' . $this->setting('instal
 $url = $this->serverUrl(true);
 ?>
 
+<?php
+$uri = $_SERVER['REQUEST_URI'];
+?>
+
+<?php if (preg_match('/item\/\d+$/', $uri)) :?>
+<div class="property">
+    <h4>공유하기</h4>
+<?php endif; ?>
+
 <ul id='sharing-buttons'>
     <?php if(in_array('fb', $enabledMethods)) :?>
     <li id='sharing-fb' class='sharing-button'>
@@ -71,3 +80,7 @@ $url = $this->serverUrl(true);
     </li>
     <?php endif;?>
 </ul>
+
+<?php if (preg_match('/item\/\d+$/', $uri)) :?>
+</div>
+<?php endif; ?>

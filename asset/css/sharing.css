@@ -1,3 +1,8 @@
+.property > ul#sharing-buttons {
+    width: 75%;
+    margin: 0;
+}
+
 ul#sharing-buttons {
     list-style: none;
     line-height: 20px;
@@ -12,11 +17,11 @@ li.sharing-button {
 }
 
 .fb-share-button span {
-    vertical-align: unset !important;
+    vertical-align: top !important;
 }
 
 li#sharing-pinterest span {
-    vertical-align: unset !important;
+    vertical-align: top !important;
 }
 
 li#sharing-email a, li#sharing-embed a {
